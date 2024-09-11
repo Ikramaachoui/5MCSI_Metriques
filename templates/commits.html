@@ -3,28 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de commits minute par minute</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1 {
-            text-align: center;
-        }
-        .chart-container {
-            width: 80%;
-            max-width: 800px;
-        }
-    </style>
+    <title>Graphique des Commits</title>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f2f5; margin: 0;">
+
+    <div style="text-align: center;">
+        <h1>Nombre de Commits par Minute</h1>
+        <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+            <!-- X Axis -->
+            <line x1="50" y1="350" x2="750" y2="350" stroke="black" stroke-width="2"/>
+            <text x="50" y="370" font-size="12" text-anchor="middle">0</text>
+            <text x="150" y="370" font-size="12" text-anchor="middle">10</text>
+            <text x="250" y="370" font-size="12" text-anchor="middle">20</text>
+            <text x="350" y="370" font-size="12" text-anchor="middle">30</text>
+            <text x="450" y="370" font-size="12" text-anchor="middle">40</text>
+            <text x="550" y="370" font-size="12" text-anchor="middle">50</text>
+            <text x="650" y="370" font-size="12" text-anchor="middle">60</text>
+
+            <!-- Y Axis -->
+            <line x1="50" y1="50" x2="50" y2="350" stroke="black" stroke-width="2"/>
+            <text x="30" y="50" font-size="12" text-anchor="end">10</text>
+            <text x="30" y="150" font-size="12" text-anchor="end">8</text>
+            <text x="30" y="250" font-size="12" text-anchor="end">6</text>
+            <text x="30" y="350" font-size="12" text-anchor="end">4</text>
+
+            <!-- Bars -->
+            <rect x="60" y="100" width="40" height="250" fill="lightblue" />
+            <rect x="120" y="200" width="40" height="150" fill="lightgreen" />
+            <rect x="180" y="150" width="40" height="200" fill="lightcoral" />
+            <rect x="240" y="180" width="40" height="170" fill="lightgoldenrodyellow" />
+            <rect x="300" y="130" width="40" height="220" fill="lightpink" />
+            <rect x="360" y="70" width="40" height="280" fill="lightgray" />
+            <rect x="420" y="140" width="40" height="210" fill="lightsalmon" />
+
+            <!-- Labels -->
+            <text x="80" y="370" font-size="12" text-anchor="middle">0</text>
+            <text x="140" y="370" font-size="12" text-anchor="middle">1</text>
+            <text x="200" y="370" font-size="12" text-anchor="middle">2</text>
+            <text x="260" y="370" font-size="12" text-anchor="middle">3</text>
+            <text x="320" y="370" font-size="12" text-anchor="middle">4</text>
+            <text x="380" y="370" font-size="12" text-anchor="middle">5</text>
+            <text x="440" y="370" font-size="12" text-anchor="middle">6</text>
+
+        </svg>
+    </div>
+
+</body>
+</html>
 
     <h1>Nombre de commits minute par minute</h1>
     <div class="chart-container">
