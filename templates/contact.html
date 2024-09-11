@@ -4,90 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de Contact</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .contact-form {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-            width: 400px;
-        }
-        .contact-form h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .contact-form label {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 5px;
-            display: block;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-            color: #333;
-        }
-        .contact-form textarea {
-            height: 100px;
-            resize: none;
-        }
-        .contact-form button {
-            width: 100%;
-            padding: 12px;
-            background-color: #6c63ff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #574ccf;
-        }
-        .contact-form p {
-            text-align: center;
-            font-size: 12px;
-            color: #888;
-        }
-    </style>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f2f5; margin: 0;">
 
-    <div class="contact-form">
-        <h2>Contactez-nous</h2>
-        <form action="/contact" method="POST">
-            <label for="firstname">Prénom</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
-            
-            <label for="lastname">Nom</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Votre email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-            
-            <button type="submit">Envoyer</button>
+    <div style="background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 350px; text-align: center;">
+        <h2 style="margin-bottom: 20px; color: #333; font-size: 24px;">Contactez-nous</h2>
+        <form action="#" method="post">
+            <div style="margin-bottom: 15px; text-align: left;">
+                <label for="first-name" style="display: block; margin-bottom: 5px; color: #666; font-size: 14px;">PrÃ©nom</label>
+                <input type="text" id="first-name" name="first-name" required style="width: calc(100% - 22px); padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 15px; text-align: left;">
+                <label for="last-name" style="display: block; margin-bottom: 5px; color: #666; font-size: 14px;">Nom</label>
+                <input type="text" id="last-name" name="last-name" required style="width: calc(100% - 22px); padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 15px; text-align: left;">
+                <label for="message" style="display: block; margin-bottom: 5px; color: #666; font-size: 14px;">Message</label>
+                <textarea id="message" name="message" required style="width: calc(100% - 22px); padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; height: 100px; resize: vertical;"></textarea>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="submit" value="Envoyer" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+            </div>
         </form>
-        <p>© 2024 Votre entreprise</p>
     </div>
 
 </body>
 </html>
-
